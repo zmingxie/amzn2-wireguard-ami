@@ -1,4 +1,4 @@
-name: Build Amazon Linux 2 WireGuard AMI
+name: Amazon Linux 2 WireGuard AMI Build
 
 on:
   push:
