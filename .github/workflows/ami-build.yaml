@@ -12,8 +12,7 @@ jobs:
       - name: Packer AMI Build
         uses: zmingxie/packer-ami-builder@master
         with:
-          templateFile: '.'
-          workDir: '.'
+          packerArgs: "build ."
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
