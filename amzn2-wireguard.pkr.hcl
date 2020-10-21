@@ -4,7 +4,7 @@ source "amazon-ebs" "amzn2" {
   instance_type = "t3.micro"
 
   source_ami_filter {
-    filters {
+    filters = {
       virtualization-type = "hvm"
       name =  "amzn2-ami-hvm-2.0.*-x86_64-gp2"
       root-device-type = "ebs"
