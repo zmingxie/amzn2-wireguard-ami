@@ -1,5 +1,5 @@
 # amzn2-wireguard
-![Amazon Linux 2 WireGuard](https://github.com/zmingxie/amzn2-wireguard-ami/workflows/Amazon%20Linux%202%20WireGuard%20AMI%20Build/badge.svg?branch=master)
+[![Amazon Linux 2 WireGuard](https://github.com/zmingxie/amzn2-wireguard-ami/workflows/Amazon%20Linux%202%20WireGuard%20AMI%20Build/badge.svg?branch=master)](https://github.com/zmingxie/amzn2-wireguard-ami/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 [Packer](https://www.packer.io/) Template for building an Amazon Linux 2 AMI with [WireGuard](https://www.wireguard.com/)
