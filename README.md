@@ -7,7 +7,7 @@
 
 ## How to Build?
 
-This template was written using HCL2 which only supported in Packer `v1.5.0+`. As a result, you will need a recent version for Packer and run:
+This template was written using HCL2 which only supported in Packer `v1.7.0+`. As a result, you will need a recent version for Packer and run:
 ```bash
 packer build .
 

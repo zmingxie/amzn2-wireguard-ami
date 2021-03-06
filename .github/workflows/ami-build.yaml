@@ -9,9 +9,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Packer AMI Build
+
+      - name: Packer Format Check
         uses: zmingxie/packer-ami-builder@master
         with:
+          packerVersion: '1.7.0'
+          packerArgs: 'fmt --check .'
+
+      - name: Packer Validate
+        uses: zmingxie/packer-ami-builder@master
+        with:
+          packerVersion: '1.7.0'
+          packerArgs: 'validate .'
+
+      - name: Packer AMI Build
+        uses: zmingxie/packer-ami-builder@master
+
+        with:
+          packerVersion: '1.7.0'
           packerArgs: "build ."
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
